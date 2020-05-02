@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/TextBox"
+        android:layout_width="339dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/my_border"
+        android:ems="10"
+        android:hint="@string/textHint"
+        android:importantForAutofill="no"
+        android:inputType="date|textUri|textShortMessage|textLongMessage|textAutoCorrect|numberSigned|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|number|datetime|textWebEmailAddress|textPersonName|text|textPhonetic|textCapSentences|textPassword|textAutoComplete|textImeMultiLine|textPostalAddress|numberDecimal|textEmailAddress|numberPassword|textCapWords|phone|textEmailSubject|textCapCharacters|time|textWebPassword"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorWhite"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextBox"
+        app:layout_constraintVertical_bias="0.583">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/C"
+                android:textAlignment="center"
+                android:textColor="#eb4034"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnBrac"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/bracket"
+                android:textAlignment="center"
+                android:textColor="#04a7d9"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnPercent"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/percent"
+                android:textAlignment="center"
+                android:textColor="#04a7d9"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/div"
+                android:textAlignment="center"
+                android:textColor="#04a7d9"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSeven"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/seven"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnEight"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/eight"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnNine"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/nine"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnMul"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/mul"
+                android:textAlignment="center"
+                android:textColor="#04a7d9"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFour"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/Four"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnFive"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/five"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnSix"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/six"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textColor="#04a7d9"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOne"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/one"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnTwo"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/two"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnThree"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/three"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textColor="#04a7d9"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPlusMinus"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+
+
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/plusMinus"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnZero"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/zero"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="serif-monospace"
+
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/dot"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button_equal"
+                android:fontFamily="serif-monospace"
+                android:minWidth="110dip"
+                android:minHeight="80dip"
+                android:text="@string/equal"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
